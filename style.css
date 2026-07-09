@@ -1355,6 +1355,7 @@ section {
 
 .speaker-photo {
     aspect-ratio: 1/1.05;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1365,7 +1366,7 @@ section {
     position: relative;
     overflow: hidden;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -1374,6 +1375,7 @@ section {
 
 @media (max-width: 480px) {
     .speaker-photo {
+        min-height: 280px;
         font-size: 28px;
     }
 }
