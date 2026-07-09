@@ -11,107 +11,18 @@
     href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700;9..144,900&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
     rel="stylesheet">
   <!-- For standard desktop browsers -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo/favicon.png">
 
   <!-- For Safari / Apple devices iOS Home Screen -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/logo/favicon.png">
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Mobile menu styles - add these to your CSS */
-    .mobile-menu {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 80%;
-      max-width: 400px;
-      height: 100vh;
-      background: white;
-      z-index: 250;
-      padding: 80px 30px 30px;
-      transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
-      overflow-y: auto;
-    }
-
-    .mobile-menu.active {
-      right: 0;
-    }
-
-    .mobile-menu a {
-      display: block;
-      padding: 16px 0;
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--forest-deep);
-      border-bottom: 1px solid rgba(15, 61, 46, 0.1);
-      transition: color 0.3s, padding-left 0.3s;
-    }
-
-    .mobile-menu a:hover {
-      color: var(--gold);
-      padding-left: 8px;
-    }
-
-    .mobile-menu .btn {
-      margin-top: 20px;
-      text-align: center;
-      justify-content: center;
-      display: flex;
-    }
-
-    .menu-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 240;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s, visibility 0.3s;
-    }
-
-    .menu-overlay.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .burger {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 6px;
-      transition: transform 0.3s;
-    }
-
-    .burger span {
-      width: 22px;
-      height: 2px;
-      background: #333;
-      transition: transform 0.3s, opacity 0.3s;
-    }
-
-    .burger.active span:nth-child(1) {
-      transform: translateY(7px) rotate(45deg);
-    }
-
-    .burger.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .burger.active span:nth-child(3) {
-      transform: translateY(-7px) rotate(-45deg);
-    }
-  </style>
 </head>
 
 <body>
 
   <nav id="nav">
     <div class="logo">
-      <img src="IIF-Logo-Green.png" alt="Impact Investors Foundation" class="logo-img">
+      <img src="./images/logo/IIF-Logo-Green.png" alt="Impact Investors Foundation" class="logo-img">
     </div>
     <div class="nav-links">
       <a href="#home">Home</a>
@@ -531,119 +442,119 @@
 
       <div class="speaker-grid" data-reveal>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Ibukun Awosika.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Ibukun\ Awosika.png');"></div>
           <div class="speaker-info">
             <h4>Ibukun Awosika</h4>
             <p>Vice Chair, GSG Impact & <br> Chair, NABII</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Afolabi Oladele.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Afolabi\ Oladele.png');"></div>
           <div class="speaker-info">
             <h4>Afolabi Oladele</h4>
             <p>Fmr. Chair, Impact Investors <br> Foundation</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./etemore-glover.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/etemore-glover.png');"></div>
           <div class="speaker-info">
             <h4>Etemore Glover</h4>
             <p>Chief Executive Officer, Impact Investors Foundation</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Thelma Ekiyor Olu-Solanke.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Thelma\ Ekiyor\ Olu-Solanke.png');"></div>
           <div class="speaker-info">
             <h4>Thelma Ekiyor Olu-Solanke</h4>
             <p>Chair, Nigeria Office for Philanthropy & Impact Investment</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Toyin Sanni.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Toyin\ Sanni.png');"></div>
           <div class="speaker-info">
             <h4>Toyin Sanni</h4>
             <p>Founder and CEO, Emerging <br> Africa Group</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Uwa Osa-Oboh.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Uwa\ Osa-Oboh.png');"></div>
           <div class="speaker-info">
             <h4>Uwa Osa-Oboh</h4>
             <p>Head of Corporate Development, African Capital Alliance (ACA)</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Habiba Ali.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Habiba\ Ali.png');"></div>
           <div class="speaker-info">
             <h4>Habiba Ali</h4>
             <p>Managing Director and CEO, Sosai Renewable Energies Company</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Yemi Keri.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Yemi-Keri.png');"></div>
           <div class="speaker-info">
             <h4>Yemi Keri</h4>
             <p>Chief Executive Officer, Heckerbella Limited</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Tokunboh Ishmael.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Tokunboh\ Ishmael.png');"></div>
           <div class="speaker-info">
             <h4>Tokunboh Ishmael</h4>
             <p>Managing Partner, Alitheia Capital & Board Member, NABII</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Tunde Mabawonku.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Tunde\ Mabawonku.png');"></div>
           <div class="speaker-info">
             <h4>Tunde Mabawonku</h4>
             <p>Executive Director, Retail & Digital Business of Wema Bank Plc</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Wale Adeosun.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Wale Adeosun.png');"></div>
           <div class="speaker-info">
             <h4>Wale Adeosun</h4>
             <p>CEO, Kuramo Capital <br> Management</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Sarah Teacher.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Sarah Teacher.png');"></div>
           <div class="speaker-info">
             <h4>Sarah Teacher</h4>
             <p>Co-CEO, Impact Investing <br> Institute</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./vanessa-Kacherginsky.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/vanessa-Kacherginsky.png');"></div>
           <div class="speaker-info">
             <h4>Vanessa Kacherginsky</h4>
             <p>CEO, Israel Forum for <br> Impact Economy</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Joy Odiette.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Joy\ Odiette.png');"></div>
           <div class="speaker-info">
             <h4>Joy Odiette</h4>
             <p>Blue Pictures <br> Entertainment</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Lateef-Adedimeji.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Lateef-Adedimeji.png');"></div>
           <div class="speaker-info">
             <h4>Lateef Adedimeji</h4>
             <p>Actor, Producer & Creative <br> Entrepreneur</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Gbenga Hassan.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Gbenga Hassan.png');"></div>
           <div class="speaker-info">
             <h4>Gbenga Hassan</h4>
             <p>Managing Director, Argentil Capital Management</p>
           </div>
         </div>
         <div class="speaker-card">
-          <div class="speaker-photo" style="background-image: url('./Mezuo-Nwuneli.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Mezuo-Nwuneli.png');"></div>
           <div class="speaker-info">
             <h4>Mezuo Nwuneli</h4>
             <p>Chief Excutive Officer, <br> Sahel Capital</p>
@@ -785,7 +696,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo">
-            <img src="iif-logo-white.png" alt="Impact Investors Foundation" class="logo-img-footer">
+            <img src="./images/logo/iif-logo-white.png" alt="Impact Investors Foundation" class="logo-img-footer">
           </div>
           <!-- <p>Unlocking capital for social investment in Nigeria since 2018. Secretariat for the National Advisory Board for Impact Investing.</p> -->
         </div>
