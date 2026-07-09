@@ -2095,6 +2095,23 @@ footer {
       transition: transform 0.3s;
     }
 
+        /* Mobile view (Default) */
+        .burger {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 6px;
+            transition: transform 0.3s;
+        }
+    
+        /* Desktop view (Hides the burger icon) */
+        @media (min-width: 768px) {
+            .burger {
+                display: none !important;
+            }
+        }
+
     .burger span {
       width: 22px;
       height: 2px;
