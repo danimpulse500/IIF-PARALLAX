@@ -2686,3 +2686,139 @@ footer {
 .explore-card:hover .explore-arrow {
     transform: translateX(4px);
 }
+
+.explore-arrow {
+    /* Aligns the icon perfectly in the middle of your text line */
+    display: inline-flex;
+    align-items: center;
+
+    /* Control the arrow's color right here */
+    color: var(--gold);
+}
+
+.arrow-svg {
+    /* Scales the icon relative to your text size */
+    width: 1.2em;
+    height: 1.2em;
+
+    /* Adds a smooth transition if you decide to animate it on hover */
+    transition: transform 0.2s ease;
+}
+
+/* Optional: Subtle micro-interaction on hover */
+a:hover .arrow-svg {
+    transform: translateX(4px);
+}
+
+
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    padding: 8px 0;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: var(--ivory);
+    color: var(--forest);
+}
+
+.dropdown-menu a::after {
+    display: none !important;
+}
+
+
+/* Mobile Dropdown Styles */
+.mobile-dropdown {
+    border-bottom: 1px solid rgba(15, 61, 46, 0.1);
+}
+
+.mobile-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--forest-deep);
+    transition: color 0.3s;
+}
+
+.mobile-dropdown-toggle:hover {
+    color: var(--gold);
+}
+
+.mobile-dropdown-arrow {
+    transition: transform 0.3s ease;
+}
+
+.mobile-dropdown.active .mobile-dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.mobile-dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 16px;
+}
+
+.mobile-dropdown.active .mobile-dropdown-menu {
+    max-height: 200px;
+}
+
+.mobile-dropdown-menu a {
+    display: block;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    border-bottom: none;
+    transition: color 0.3s, padding-left 0.3s;
+}
+
+.mobile-dropdown-menu a:hover {
+    color: var(--gold);
+    padding-left: 8px;
+}

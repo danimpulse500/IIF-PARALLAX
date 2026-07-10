@@ -30,8 +30,18 @@
       <a href="#sponsors">Sponsor</a>
       <a href="#get-involved">Get Involved</a>
       <a href="#video">Media</a>
-      <a href="https://www.papermark.com/view/cmr8zme94000al2046pllele9"
-        target="_blank">Reports</a>
+      <div class="nav-item dropdown">
+        <a href="#" class="dropdown-toggle">Reports <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6" />
+          </svg></a>
+        <div class="dropdown-menu">
+          <a href="https://www.papermark.com/view/cmr8zme94000al2046pllele9"
+            target="_blank">ACII 2025 Reports</a>
+          <a href="https://ace.impactinvestorsfoundation.org/wp-content/uploads/2025/09/WADS-2024.pdf" target="_blank">WADS
+            2024 Report</a>
+        </div>
+      </div>
     </div>
     <div class="nav-cta">
       <a href="https://forms.gle/gNmNLrWWXDbPMbhB8" class="btn btn-gold">Register</a>
@@ -42,17 +52,32 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div class="menu-overlay" id="menuOverlay"></div>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home">Home</a>
-    <a href="#about">About us</a>
-    <a href="#sponsors">Sponsor</a>
-    <a href="#gallery">Partner Event</a>
-    <a href="#video">Media</a>
-    <a href="https://www.papermark.com/view/cmr8zme94000al2046pllele9"
-      target="_blank">Reports</a>
-    <a href="https://forms.gle/gNmNLrWWXDbPMbhB8" class="btn btn-gold" style="margin-top: 30px;">Register</a>
+<!-- Mobile Menu -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About us</a>
+  <a href="#sponsors">Sponsor</a>
+  <a href="#gallery">Partner Event</a>
+  <a href="#video">Media</a>
+
+  <!-- Reports Dropdown for Mobile -->
+  <div class="mobile-dropdown">
+    <a href="#" class="mobile-dropdown-toggle">Reports
+      <svg class="mobile-dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </a>
+    <div class="mobile-dropdown-menu">
+      <a href="https://www.papermark.com/view/cmr8zme94000al2046pllele9" target="_blank">ACII 2025 Reports</a>
+      <a href="https://ace.impactinvestorsfoundation.org/wp-content/uploads/2025/09/WADS-2024.pdf" target="_blank">WADS
+        2024 Report</a>
+    </div>
   </div>
+
+  <a href="https://forms.gle/gNmNLrWWXDbPMbhB8" class="btn btn-gold" style="margin-top: 30px;">Register</a>
+</div>
 
   <!-- HERO CAROUSEL -->
   <header class="hero" id="home">
@@ -64,14 +89,14 @@
           style="width:60vw;height:60vw;top:-10%;left:55%;background:radial-gradient(circle, rgba(103,178,150,0.5), transparent 70%); z-index: 2;">
         </div>
         <!-- Added slide background image -->
-        <img src="./images/carousel/ACII (4).jpg" alt="Annual Convening background"
+        <img src="./images/carousel/cimg2.png" alt="Annual Convening background"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" />
       </div>
       <div class="slide-scrim"></div>
       <div class="slide-content">
         <div class="slide-inner">
           <div class="eyebrow">#ACII2026 · 9th Annual Convening</div>
-          <h3>Register for the 9th Annual Convening on Impact Investing</h3>
+          <h3>9th Annual Convening on Impact Investing</h3>
           <h1>Theme: Unlocking Institutional Capital for Nigeria’s <em>Impact Economy</em></h1>
           <p class="desc">A premier gathering for Nigeria's impact investing community, bringing together investors,
             policymakers, social enterprises, and innovators to shape the flow of capital.</p>
@@ -102,7 +127,7 @@
           style="width:55vw;height:55vw;bottom:-15%;right:10%;background:radial-gradient(circle, rgba(201,151,61,0.45), transparent 70%); z-index: 2;">
         </div>
         <!-- Added slide background image -->
-        <img src="./images/carousel/ACII (27).jpg" alt="West Africa Deal Summit background"
+        <img src="./images/carousel/cimg3.png" alt="West Africa Deal Summit background"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" />
       </div>
       <div class="slide-scrim"></div>
@@ -134,7 +159,7 @@
           style="width:50vw;height:50vw;top:10%;left:10%;background:radial-gradient(circle, rgba(15,61,46,0.7), transparent 70%); z-index: 2;">
         </div>
         <!-- Added slide background image -->
-        <img src="./images/carousel/ACII (61).jpg" alt="Awards Night background"
+        <img src="./images/carousel/cimg1.png" alt="Awards Night background"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" />
       </div>
       <div class="slide-scrim"></div>
@@ -421,7 +446,7 @@
           <h4>Creatives, Media & Cultural Stakeholders</h4>
         </div>
       
-        <div class="benefit-card">
+        <!-- <div class="benefit-card">
           <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10" />
@@ -429,7 +454,7 @@
             <path d="M2 12h20" />
           </svg>
           <h4>International Delegations & Diaspora</h4>
-        </div>
+        </div> -->
       </div>
         </div>
       </div>
@@ -458,7 +483,12 @@
             <div class="explore-content">
               <h4>Become a Sponsor</h4>
               <p>Partner with us to drive impact and showcase your commitment to sustainable investing.</p>
-              <span class="explore-arrow">→</span>
+              <span class="explore-arrow">
+  <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+    <polyline points="12 5 19 12 12 19"></polyline>
+  </svg>
+</span>
             </div>
           </a>
   
@@ -475,7 +505,12 @@
             <div class="explore-content">
               <h4>Book Ticket</h4>
               <p>Secure your seat at Nigeria's premier impact investing convening.</p>
-              <span class="explore-arrow">→</span>
+              <span class="explore-arrow">
+  <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+    <polyline points="12 5 19 12 12 19"></polyline>
+  </svg>
+</span>
             </div>
           </a>
   
@@ -494,7 +529,12 @@
             <div class="explore-content">
               <h4>2025 Report</h4>
               <p>Download the post-event report from the 8th Annual Convening.</p>
-              <span class="explore-arrow">→</span>
+              <span class="explore-arrow">
+  <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+    <polyline points="12 5 19 12 12 19"></polyline>
+  </svg>
+</span>
             </div>
           </a>
   
@@ -516,8 +556,13 @@
             </div>
             <div class="explore-content">
               <h4>Agenda at a Glance</h4>
-              <p>View the full schedule of sessions, speakers, and networking opportunities.</p>
-              <span class="explore-arrow">→</span>
+              <p>View the programme outline and networking opportunities.</p>
+              <span class="explore-arrow">
+  <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+    <polyline points="12 5 19 12 12 19"></polyline>
+  </svg>
+</span>
             </div>
           </a>
   
@@ -534,7 +579,12 @@
             <div class="explore-content">
               <h4>Host a Side Event</h4>
               <p>Organize a side event to deepen engagement around your impact focus area.</p>
-              <span class="explore-arrow">→</span>
+              <span class="explore-arrow">
+  <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+    <polyline points="12 5 19 12 12 19"></polyline>
+  </svg>
+</span>
             </div>
           </a>
         </div>
@@ -965,11 +1015,11 @@
     nav.classList.toggle('scrolled', window.scrollY > 40);
   });
 
-  // MOBILE MENU FUNCTIONALITY
+ // MOBILE MENU FUNCTIONALITY
   const burger = document.getElementById('burger');
   const mobileMenu = document.getElementById('mobileMenu');
   const menuOverlay = document.getElementById('menuOverlay');
-  const mobileLinks = mobileMenu.querySelectorAll('a');
+  const mobileLinks = mobileMenu.querySelectorAll('a:not(.mobile-dropdown-toggle)'); // Exclude dropdown toggle
 
   function toggleMenu() {
     burger.classList.toggle('active');
@@ -988,9 +1038,16 @@
   burger.addEventListener('click', toggleMenu);
   menuOverlay.addEventListener('click', closeMenu);
 
-  // Close menu when clicking on any link
+  // Close menu when clicking on any link (except dropdown toggle)
   mobileLinks.forEach(link => {
     link.addEventListener('click', closeMenu);
+  });
+
+  // Mobile dropdown toggle
+  const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
+  mobileDropdownToggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    this.parentElement.classList.toggle('active');
   });
 
  // REVEAL ON SCROLL
