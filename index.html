@@ -16,6 +16,42 @@
   <!-- For Safari / Apple devices iOS Home Screen -->
   <link rel="apple-touch-icon" sizes="180x180" href="./images/logo/favicon.png">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Override Liveet widget button to match your brand */
+    .liveet-widget-button,
+    .liveet-widget-container button,
+    .liveet-trigger-btn {
+      background: #c9973d !important;
+      color: #082018 !important;
+      border-radius: 2px !important;
+      font-family: 'Manrope', sans-serif !important;
+      font-weight: 700 !important;
+      font-size: 14.5px !important;
+      letter-spacing: 0.02em !important;
+      padding: 15px 28px !important;
+      border: 1px solid transparent !important;
+      transition: transform .35s cubic-bezier(.2, .8, .2, 1), background .3s, color .3s, border-color .3s !important;
+      cursor: pointer !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      text-transform: none !important;
+      box-shadow: none !important;
+    }
+
+    .liveet-widget-button:hover,
+    .liveet-widget-container button:hover,
+    .liveet-trigger-btn:hover {
+      background: #e8c77e !important;
+      transform: translateY(-2px) !important;
+    }
+
+    /* Hide any other Liveet auto-generated buttons */
+    .liveet-widget-button:not(.liveet-trigger-btn) {
+      display: none !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -693,8 +729,8 @@
           </div>
         </div>
         <div class="speaker-card" data-reveal>
-          <div class="speaker-photo"
-            style="background-image: url('./images/speakers/Thelma-Ekiyor-Olu-Solanke.png');"></div>
+          <div class="speaker-photo" style="background-image: url('./images/speakers/Thelma-Ekiyor-Olu-Solanke.png');">
+          </div>
           <div class="speaker-info">
             <h4>Thelma Ekiyor Olu-Solanke</h4>
             <p>Chair, Nigeria Office for Philanthropy & Impact Investment</p>
@@ -973,16 +1009,17 @@
   </div>
 
   <!-- Liveet Widget -->
-  <div data-liveet-widget-code="LIVT85IU9E"></div>
+  <div data-liveet-widget-code="LIVT85IU9E" class="liveet-btn"></div>
   <script src="https://www.liveet.co/assets/js/widget.js"></script>
   <script>
     LiveetWidget.initAll({
-      // buttonLabel: 'Register Here',
-      // buttonBackgroundColor: '#00a444',
-      // buttonTextColor: '#ffffff',
-      // buttonBorderRadius: '9999px',
-      // buttonFontSize: '16px',
-
+      buttonLabel: 'Register ',
+      buttonBackgroundColor: '#c9973d',
+      buttonTextColor: '#082018',
+      buttonBorderRadius: '2px',
+      buttonFontSize: '14.5px',
+      buttonFontFamily: "'Manrope', sans-serif",
+      buttonFontWeight: '700',
 
       onStart: function (data) {
         // Fires when user begins registration
