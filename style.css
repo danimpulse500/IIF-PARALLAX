@@ -2867,9 +2867,11 @@ a:hover .arrow-svg {
     }
 }
 
+/* ---- ALL CARDS DARK THEME ---- */
 .ticket-card {
-    background: #fff;
-    border: 1px solid var(--line);
+    background: var(--forest-deep);
+    /* dark background */
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 8px;
     padding: 32px 28px 30px;
     text-align: center;
@@ -2879,24 +2881,27 @@ a:hover .arrow-svg {
     position: relative;
     display: flex;
     flex-direction: column;
+    color: #fff;
+    /* all text white by default */
 }
 
 .ticket-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 50px rgba(15, 61, 46, 0.12);
+    box-shadow: 0 20px 50px rgba(8, 32, 24, 0.5);
     border-color: var(--gold);
 }
 
+/* Featured card (Standard) – stands out with gold border & glow */
 .ticket-card.featured {
     border-color: var(--gold);
-    background: linear-gradient(180deg, #fff 0%, var(--ivory) 100%);
-    box-shadow: 0 8px 30px rgba(201, 151, 61, 0.15);
+    box-shadow: 0 8px 30px rgba(201, 151, 61, 0.25);
 }
 
 .ticket-card.featured:hover {
-    box-shadow: 0 20px 50px rgba(201, 151, 61, 0.25);
+    box-shadow: 0 20px 50px rgba(201, 151, 61, 0.4);
 }
 
+/* Badge – gold on dark */
 .ticket-badge {
     display: inline-block;
     font-family: 'Manrope', sans-serif;
@@ -2904,28 +2909,20 @@ a:hover .arrow-svg {
     font-size: 10px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--gold-deep);
-    background: rgba(201, 151, 61, 0.12);
+    color: var(--forest-deep);
+    background: var(--gold);
     padding: 4px 14px;
     border-radius: 20px;
     margin-bottom: 16px;
     align-self: center;
 }
 
-.ticket-card.featured .ticket-badge {
-    background: var(--gold);
-    color: var(--forest-deep);
-}
-
-.ticket-header {
-    margin-bottom: 18px;
-}
-
+/* Headings & labels */
 .ticket-header h3 {
     font-family: 'Fraunces', serif;
     font-size: 20px;
     font-weight: 600;
-    color: var(--forest-deep);
+    color: #fff;
     margin-bottom: 2px;
 }
 
@@ -2933,15 +2930,16 @@ a:hover .arrow-svg {
     font-family: 'Manrope', sans-serif;
     font-size: 12px;
     font-weight: 600;
-    color: var(--ink-soft);
+    color: rgba(255, 255, 255, 0.7);
     letter-spacing: 0.04em;
 }
 
+/* Price */
 .ticket-price {
     font-family: 'Fraunces', serif;
     font-size: 44px;
     font-weight: 700;
-    color: var(--forest-deep);
+    color: #fff;
     margin-bottom: 18px;
     line-height: 1.1;
 }
@@ -2949,10 +2947,17 @@ a:hover .arrow-svg {
 .ticket-price .currency {
     font-size: 28px;
     font-weight: 600;
-    color: var(--gold-deep);
+    color: var(--gold-light);
     margin-right: 2px;
 }
 
+.price-alt {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Features list */
 .ticket-features {
     list-style: none;
     padding: 0;
@@ -2966,7 +2971,7 @@ a:hover .arrow-svg {
     align-items: flex-start;
     gap: 10px;
     font-size: 14px;
-    color: var(--ink-soft);
+    color: rgba(255, 255, 255, 0.85);
     padding: 6px 0;
     line-height: 1.5;
 }
@@ -2975,33 +2980,18 @@ a:hover .arrow-svg {
     width: 18px;
     height: 18px;
     flex-shrink: 0;
-    color: var(--gold);
+    color: var(--gold-light);
     margin-top: 1px;
 }
 
-.ticket-features li strong {
-    color: var(--forest-deep);
-    font-weight: 600;
-}
-
-.ticket-valid {
-    font-family: 'Manrope', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--gold-deep);
-    background: rgba(201, 151, 61, 0.08);
-    padding: 6px 12px;
-    border-radius: 4px;
-    margin-bottom: 18px;
-    display: inline-block;
-}
-
+/* Button – standard gold (light mode) */
 .ticket-btn {
     width: 100%;
     justify-content: center;
     margin-top: 4px;
 }
 
+/* Responsive */
 @media (max-width: 640px) {
     .ticket-card {
         padding: 26px 20px 24px;
@@ -3029,8 +3019,6 @@ a:hover .arrow-svg {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    /* background: rgba(201, 151, 61, 0.10); */
-    /* border: 1px solid rgba(201, 151, 61, 0.25); */
     border-radius: 8px;
     padding: 14px 24px;
     margin: 0 auto 40px;
